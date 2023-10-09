@@ -1,0 +1,70 @@
+#scroll-container {
+    /* border: 1px solid black; */
+    /* border-radius: 5px; */
+    filter:drop-shadow(1px 1px 3px rgba(0, 0, 0, 0.2));
+    overflow: hidden;
+    width: 90vh;
+    position: absolute;
+    right: -10px;
+    bottom: 40vh;
+    transform: rotate(-45deg);
+    background-color: white;
+    /* height: 1em; */
+    
+  }
+  
+  #scroll-text {
+    /* animation properties */
+    width: 10255px;
+    -moz-transform: translateX(0%);
+    -webkit-transform: translateX(0%);
+    transform: translateX(0%);
+    
+    -moz-animation: my-animation 200s linear infinite;
+    -webkit-animation: my-animation 200s linear infinite;
+    animation: my-animation 200s linear infinite;
+  }
+  
+  /* for Firefox */
+  @-moz-keyframes my-animation {
+    from { -moz-transform: translateX(0%); }
+    to { -moz-transform: translateX(-100%); }
+  }
+  
+  /* for Chrome */
+  @-webkit-keyframes my-animation {
+    from { -webkit-transform: translateX(1%); }
+    to { -webkit-transform: translateX(-100%); }
+  }
+  
+  @keyframes my-animation {
+    from {
+      -moz-transform: translateX(1%);
+      -webkit-transform: translateX(1%);
+      transform: translateX(1%);
+    }
+    to {
+      -moz-transform: translateX(-100%);
+      -webkit-transform: translateX(-100%);
+      transform: translateX(-100%);
+    }
+  }
+
+#scroll-desc {
+  position: absolute;
+  right: 10px;
+  bottom: 10px;
+  font-size: 0.8em;
+}
+
+.introduction {
+  width:60%;
+  min-width: 400px;
+  padding-left: 50px;
+  position: relative;
+  display: flex;
+  /* justify-content: center; */
+  flex-flow: column;
+  margin-top: 125px;
+}
+  
